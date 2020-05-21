@@ -4,7 +4,9 @@ export default {
   /*
   ** Headers of the page
   */
-  buildDir: '../src/main/resources',
+  generate: {
+    dir: '../src/main/resources'
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
