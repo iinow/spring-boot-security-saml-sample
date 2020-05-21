@@ -262,7 +262,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements I
 		HTTPMetadataProvider httpMetadataProvider = new HTTPMetadataProvider(
 				this.backgroundTaskTimer, httpClient(), idpSSOCircleMetadataURL);
 		httpMetadataProvider.setParserPool(parserPool());
-		ExtendedMetadataDelegate extendedMetadataDelegate = 
+		ExtendedMetadataDelegate extendedMetadataDelegate =
 				new ExtendedMetadataDelegate(httpMetadataProvider, extendedMetadata());
 		extendedMetadataDelegate.setMetadataTrustCheck(true);
 		extendedMetadataDelegate.setMetadataRequireSignature(false);
